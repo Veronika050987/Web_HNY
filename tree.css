@@ -1,0 +1,19 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right, lightskyblue, white);
+    background-attachment: fixed;
+}
+.red-text {
+    color: red;
+}
+
+.green-text {
+    color: green;
+}
+
+.brown-text {
+    color: saddlebrown;
+}
