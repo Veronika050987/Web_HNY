@@ -17,3 +17,28 @@ body {
 .brown-text {
     color: saddlebrown;
 }
+
+@keyframes puppy-bob {
+    0% {
+        transform: rotate(0deg); /* Начальное положение */
+    }
+
+    50% {
+        transform: rotate(3deg); /* Немного наклониться вправо */
+    }
+
+    100% {
+        transform: rotate(-3deg); /* Немного наклониться влево */
+    }
+}
+
+.moving-puppy {
+    /* Обязательно задаем размер, чтобы анимация была видна */
+    /*width: 150px;
+    height: auto;*/
+    /* Применяем анимацию */
+    animation-name: puppy-bob;
+    animation-duration: 2s; /* Длительность одного цикла */
+    animation-timing-function: ease-in-out; /* Плавное начало и конец движения */
+    animation-iteration-count: infinite; /* Повторять бесконечно */
+}

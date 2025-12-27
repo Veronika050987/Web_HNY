@@ -17,3 +17,36 @@ body {
 .brown-text {
     color: saddlebrown;
 }
+
+@keyframes santa-glide {
+    0% {
+        /* Начальное положение: немного смещен влево */
+        transform: translateX(-10px) rotate(0deg);
+    }
+
+    50% {
+        /* Середина: смещен вправо и немного наклонен вперед (чтобы имитировать усилие) */
+        transform: translateX(900px) rotate(1deg);
+    }
+
+    100% {
+        /* Конец: возвращается в начальное смещение */
+        transform: translateX(-10px) rotate(0deg);
+    }
+}
+
+.moving-santa {
+    width: 200px; /* Задайте желаемый размер */
+    height: auto;
+    /* Применяем анимацию */
+    animation-name: santa-glide;
+    animation-duration: 10s; /* Цикл длится 3 секунды */
+    animation-timing-function: ease-in-out; /* Плавное замедление/ускорение */
+    animation-iteration-count: infinite; /* Бесконечное повторение */
+}
+
+/* Стили для обертки (для удобства центрирования, если нужно) */
+.santa-wrapper {
+    text-align: left;
+    padding: 10px;
+}
